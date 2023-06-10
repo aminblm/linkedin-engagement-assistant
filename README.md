@@ -1,9 +1,32 @@
 # Linkedin Engagement Assistant
 
-Introducing the AI LinkedIn Engagement Assistant, a revolutionary tool designed to enhance your LinkedIn networking and engagement efforts. With its advanced automation features, this AI-powered assistant streamlines your interactions on LinkedIn, saving you time and boosting your online presence. Whether you're a job seeker, a professional looking to expand your network, or a business aiming to establish a strong online presence, the AI LinkedIn Engagement Assistant is here to help.
-
 ![gifdemo](https://github.com/aminblm/linkedin-engagement-assistant/assets/25132838/a60f8946-61cc-4a74-b4c9-d882b21a3c8e)
 
+Introducing the AI LinkedIn Engagement Assistant, a revolutionary tool designed to enhance your LinkedIn networking and engagement efforts. With its advanced automation features, this AI-powered assistant streamlines your interactions on LinkedIn, saving you time and boosting your online presence. Whether you're a job seeker, a professional looking to expand your network, or a business aiming to establish a strong online presence, the AI LinkedIn Engagement Assistant is here to help.
+
+To modify, use, get documentation or for you enquiries kindly contact me via: <br>
+**amin@boulouma.com**
+
+## Donation and Support 🥳
+
+With your support I build, update and work on this project. You can also purchase additional packages, tutorials and materials explaining how this bot is working. <br>
+
+There are several features and simplifications I'd like to add to this project. For that I need your support to cover costs. Your support is keeping this project alive.
+
+[**Donate & support!**](https://commerce.coinbase.com/checkout/576ee011-ba40-47d5-9672-ef7ad29b1e6c)
+
+## Purchase additional materials and guides 😍
+
+You can currently, purchase full in depth detailed tutorial explaining how this bot is working, one hour booking session where i step by step build and run the bot on your machine or 5 videos
+showing how this can be used. To buy, support this project and help me add more features. <br>
+
+- [**Purchase working videos for this bot**](https://commerce.coinbase.com/checkout/3958599d-3938-4fb3-86f4-b100c2d7e850)
+- [**Purchase online call tech support to install the bot for Windows**](https://commerce.coinbase.com/checkout/638f5582-a750-4374-86ea-82d0445cbe90)
+- [**Purchase online call tech support to install the bot for Linux**](https://commerce.coinbase.com/checkout/3ec705fe-2898-4ae8-9f90-73cd1270392f)
+- [**Purchase online call tech support to install the bot for Mac OS**](https://commerce.coinbase.com/checkout/cf76021c-53be-42bc-8ae1-2dc75fcd9647)
+- [**Purchase documentation of this bot for Windows**](https://commerce.coinbase.com/checkout/ac4212d1-ecb0-4734-8946-f4a9e5c09f45)
+- [**Purchase documentation of this bot for Linux**](https://commerce.coinbase.com/checkout/69a1f1b8-3282-4ab6-9383-6ce28aab3274)
+- [**Purchase documentation of this bot for Mac OS**](https://commerce.coinbase.com/checkout/c7069064-02ac-4c3b-b980-ae7623bc8139)
 
 ## Installation
 
@@ -31,78 +54,58 @@ Need 1:1 power hour to learn how to the AI LinkedIn Engagement Assistant to its 
 
 ✅ Enhanced Like Automation:
 
-Automated likes on LinkedIn posts to optimize engagement timing.
-
-Automate likes on relevant posts to expand your network and increase visibility.
+- Automated likes on LinkedIn posts to optimize engagement timing.
+- Automate likes on relevant posts to expand your network and increase visibility.
 
 ✅ Improved Commenting Capabilities:
 
-Generate customized comments to effortlessly engage with LinkedIn posts.
-
-Automatically publish well-crafted comments on targeted posts.
-
-Seamlessly load and view more comments on LinkedIn posts.
-
-Automated likes on comments to boost interaction.
-
-Automatically like comments to foster connections and encourage meaningful conversations.
+- Generate customized comments to effortlessly engage with LinkedIn posts.
+- Automatically publish well-crafted comments on targeted posts.
+- Seamlessly load and view more comments on LinkedIn posts.
+- Automated likes on comments to boost interaction.
+- Automatically like comments to foster connections and encourage meaningful conversations.
 
 ✅ Advanced Interaction Features:
 
-Expand truncated posts to access complete content and gain deeper insights.
-
-Retrieve relevant posts based on specific criteria to streamline content discovery.
-
-Craft personalized comments to engage authentically with your network.
-
-Publish comments effortlessly to showcase your expertise and establish thought leadership.
-
-Open LinkedIn profiles of commenters to foster new connections and network expansion.
-
-Respond to comments promptly and efficiently to nurture conversations.
-
-Easily remove unwanted or outdated comments to maintain a clean profile.
-
-Utilize comment buttons to enhance user experience and streamline engagement.
-
-Generate contextually relevant and engaging comments with ease.
+- Expand truncated posts to access complete content and gain deeper insights.
+- Retrieve relevant posts based on specific criteria to streamline content discovery.
+- Craft personalized comments to engage authentically with your network.
+- Publish comments effortlessly to showcase your expertise and establish thought leadership.
+- Open LinkedIn profiles of commenters to foster new connections and network expansion.
+- Respond to comments promptly and efficiently to nurture conversations.
+- Easily remove unwanted or outdated comments to maintain a clean profile.
+- Utilize comment buttons to enhance user experience and streamline engagement.
+- Generate contextually relevant and engaging comments with ease.
 
 ✅ Intelligent ChatGPT Integration:
 
-Leverage the power of ChatGPT integration to generate high-quality comments.
+- Leverage the power of ChatGPT integration to generate high-quality comments.
 
 ✅ Streamlined Home Likes:
 
- Streamline liking activity on your home feed to efficiently engage with your network.
+- Streamline liking activity on your home feed to efficiently engage with your network.
 
 ✅ Enhanced Reply Functionality:
 
-Automatically click on the first reply in a comment thread for streamlined interaction.
-
-Generate thoughtful replies to comments, fostering meaningful conversations.
-
-Show appreciation for engaging comments by automatically sending "love" reactions.
+- Automatically click on the first reply in a comment thread for streamlined interaction.
+- Generate thoughtful replies to comments, fostering meaningful conversations.
+- Show appreciation for engaging comments by automatically sending "love" reactions.
 
 ✅ Workflow Execution:
 
-Automate complex engagement workflows to save time and effort.
-
-Execute predefined workflows tailored to specific engagement strategies.
-
-Streamline repetitive engagement tasks using workflow automation.
-
-Optimize your LinkedIn engagement through the execution of automated workflows.
+- Automate complex engagement workflows to save time and effort.
+- Execute predefined workflows tailored to specific engagement strategies.
+- Streamline repetitive engagement tasks using workflow automation.
+- Optimize your LinkedIn engagement through the execution of automated workflows.
 
 ✅ Streamlined Comment Management:
 
-Automate the process of writing and publishing comments.
-
-Automate the process of publishing comments, replying, and liking.
+- Automate the process of writing and publishing comments.
+- Automate the process of publishing comments, replying, and liking.
 
 ✅ Event Invitations:
 
-Automate event invitations to efficiently reach out to your network.
-
+- Automate event invitations to efficiently reach out to your network.
 
 ## 🔝Benefits:
 
