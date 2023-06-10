@@ -27,6 +27,7 @@ showing how this can be used. To buy, support this project and help me add more 
 - [**Purchase documentation of this bot for Windows**](https://commerce.coinbase.com/checkout/ac4212d1-ecb0-4734-8946-f4a9e5c09f45)
 - [**Purchase documentation of this bot for Linux**](https://commerce.coinbase.com/checkout/69a1f1b8-3282-4ab6-9383-6ce28aab3274)
 - [**Purchase documentation of this bot for Mac OS**](https://commerce.coinbase.com/checkout/c7069064-02ac-4c3b-b980-ae7623bc8139)
+- Contact for 1:1 setup
 
 ## Installation
 
@@ -121,31 +122,7 @@ Need 1:1 power hour to learn how to the AI LinkedIn Engagement Assistant to its 
 
 - **Join the "Transcend AI 🧠" Community**: Joining the "Builders of AI 🧠" Community gives you access to a supportive network of professionals who are leveraging AI and automation tools to enhance their LinkedIn engagement. Connect with like-minded individuals, share insights, and stay updated with the latest trends in AI-powered networking and engagement.
 
-No Need for OpenAI or ChatGPT 4 API, Only ChatGPT 3: The AI LinkedIn Engagement Assistant harnesses the power of ChatGPT 3, eliminating the need for OpenAI or ChatGPT 4 API. You can enjoy the benefits of advanced AI capabilities and seamless LinkedIn engagement without any additional dependencies or costs. The assistant leverages the cutting-edge technology of ChatGPT 3, providing a powerful and efficient solution for your LinkedIn networking needs.
-
-The AI LinkedIn Engagement Assistant empowers you to make the most of your LinkedIn presence by automating key engagement tasks. With its advanced features, this assistant enables you to save time, increase your visibility, and build meaningful connections within your professional network. Embrace the power of AI and take your LinkedIn engagement to new heights with the AI LinkedIn Engagement Assistant.
-
-## Instruction Guide and Everything You Need to Know:
-
-The AI LinkedIn Engagement Assistant comes with a comprehensive instruction guide that will help you maximize its features and get the most out of your LinkedIn engagement efforts. Whether you're new to the assistant or an experienced user, the guide provides step-by-step instructions and valuable tips to enhance your experience. Here's everything you need to know:
-
-- **Getting Started**: The guide will walk you through the process of setting up the AI LinkedIn Engagement Assistant and integrating it with your LinkedIn account. You'll learn how to access and navigate the assistant's interface, ensuring a smooth and seamless user experience.
-
-- **Key Features Overview**: The guide provides an in-depth explanation of each key feature of the AI LinkedIn Engagement Assistant. You'll learn how the auto read more feature expands posts, the auto likes feature increases your visibility, the auto comments feature helps build connections, and the auto posts comments feature allows you to actively contribute to discussions. Additionally, you'll discover how the assistant incorporates ChatGPT technology to generate intelligent comments and how the timers ensure natural engagement.
-
-- **Customization Options**: The guide explains how you can personalize your engagement by customizing comment templates and utilizing the assistant's suggested comments. You'll discover different ways to tailor your interactions on LinkedIn, making them authentic, relevant, and impactful to your professional objectives.
-
-- **Best Practices**: The guide shares best practices and strategies for using the AI LinkedIn Engagement Assistant effectively. You'll learn tips for optimizing your engagement activities, managing your time efficiently, and maintaining a consistent and engaging online presence. These insights will help you make the most of the assistant's automation features.
-
-- **Timers and Spam Prevention**: The guide provides a detailed explanation of the intelligent timers incorporated in the assistant. You'll understand how these timers help you avoid triggering spam detection algorithms and engage with others in a natural and organic manner. This section ensures that you can navigate LinkedIn without any negative consequences.
-
-- **Ongoing Updates and Lifetime Access**: The guide highlights the commitment to continuous improvement and updates of the AI LinkedIn Engagement Assistant. You'll learn about the benefits of lifetime access, which grants you access to all future updates and enhancements. This ensures that your engagement strategies remain effective and up to date with the latest LinkedIn changes.
-
-## Pricing
-
-- 1:1 setup: 79,99 euros
-- 1:1 power hour for the best practices: 179,99 euros
-
+- **No Need for OpenAI or ChatGPT 4 API, Only ChatGPT 3**: The AI LinkedIn Engagement Assistant harnesses the power of ChatGPT 3, eliminating the need for OpenAI or ChatGPT 4 API. You can enjoy the benefits of advanced AI capabilities and seamless LinkedIn engagement without any additional dependencies or costs. The assistant leverages the cutting-edge technology of ChatGPT 3, providing a powerful and efficient solution for your LinkedIn networking needs.
 
 By following the instruction guide, you'll have a comprehensive understanding of the AI LinkedIn Engagement Assistant and its features. You'll be able to automate your LinkedIn interactions effectively, saving time, enhancing your visibility, and building meaningful connections within your professional network. Embrace the power of AI and revolutionize the way you connect and communicate on LinkedIn with the AI LinkedIn Engagement Assistant.
 
