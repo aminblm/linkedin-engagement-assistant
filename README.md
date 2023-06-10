@@ -179,5 +179,15 @@ Yes, the AI LinkedIn Engagement Assistant comes with a comprehensive instruction
 
 Note: Ensure that you have the necessary permissions and access rights to use the AI LinkedIn Engagement Assistant. Use the provided scripts responsibly and in compliance with LinkedIn's terms of service.
 
+## Demo 🖥
+
+![banner](https://github.com/aminblm/linkedin-engagement-assistant/assets/25132838/63b1e5f1-347f-48d6-bbc6-baa5a5d1bbae)
+![1](https://github.com/aminblm/linkedin-engagement-assistant/assets/25132838/b3362dad-8d7e-4c10-b80a-791315438aa9)
+![2](https://github.com/aminblm/linkedin-engagement-assistant/assets/25132838/e9598b1d-2db0-45fa-9a17-9162adadaf05)
+
+## Future Implementations
+
+- From snippets to Chrome extension
+- More functions and features
 
 🤖 The AI LinkedIn Engagement Assistant brought to you with ❤️  by TranscendAI 🐈‍⬛ # linkedin-engagement-assistant
