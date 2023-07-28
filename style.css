@@ -1,15 +1,49 @@
-body{
-    width: 270px;
-    height: auto;
+/* Style for the body */
+body {
+    width: 100%; /* Set the width to 100% to fill the available space */
+    height: auto; /* Let the height adjust based on content */
+    margin: 0;
+    padding: 20px; /* Add padding to create some space between the content and the window edge */
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Light Grey */
 }
 
-.assistant-btn{
-    width: 80%;
-    margin: auto;
-    margin-top: 30px;
-    height: 50px
+/* Style for the container */
+.container {
+    width: 100%; /* Set the width to 100% to fill the available space */
+    height: auto; /* Let the height adjust based on content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.dev{
-    overflow-y: scroll;
+/* Style for the title (h1) */
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #007bff; /* Blue */
+    margin: 20px 0;
+}
+
+/* Style for the buttons */
+.assistant-btn {
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: #ffffff; /* White */
+    background-color: #007bff; /* Blue */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.assistant-btn:hover {
+    background-color: #0056b3; /* Darker shade of Blue */
+}
+
+.assistant-btn:active {
+    background-color: #003380; /* Even darker shade of Blue */
 }
