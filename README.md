@@ -19,6 +19,13 @@ There are several features and simplifications I'd like to add to this project. 
 
 [**Donate & support!**](https://commerce.coinbase.com/checkout/576ee011-ba40-47d5-9672-ef7ad29b1e6c)
 
+## How to use
+
+- Step 0: Download the repository or clone it
+- Step 1-6:
+
+![Tutorial](https://github.com/aminblm/linkedin-engagement-assistant/assets/25132838/7d403c4c-fbcd-46a8-b0a8-448632ac2f1d)
+
 ## Purchase additional materials and guides 😍
 
 You can currently, purchase full in depth detailed tutorial explaining how this bot is working, one hour booking session where i step by step build and run the bot on your machine or 5 videos
