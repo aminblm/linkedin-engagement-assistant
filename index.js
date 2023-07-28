@@ -7,7 +7,6 @@ async function like(tabId) {
 }
 
 async function writeComments(tabId) {
-    
     const script = () => {
         const textArray =  [
             "Fantastic!",
