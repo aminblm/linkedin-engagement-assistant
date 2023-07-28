@@ -26,6 +26,14 @@ body {
     margin: 20px 0;
 }
 
+/* Style for the title (h1) */
+.subtitle {
+    font-size: 26px;
+    font-weight: bold;
+    color: #007bff; /* Blue */
+    margin: 20px 0;
+}
+
 /* Style for the buttons */
 .assistant-btn {
     width: 230px;

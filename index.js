@@ -112,6 +112,21 @@ async function clickComments(tabId) {
     return await executeScriptInTab(tabId, script);
 }
 
+async function workflowLW(tabId) {
+    await like(tabId);
+    await writeComments(tabId);
+}
+
+async function workflowCW(tabId) {
+    await clickComments(tabId);
+    await writeComments(tabId);
+}
+
+async function workflowPL(tabId) {
+    await publishComments(tabId);
+    await like(tabId);
+}
+
 async function getCurrentTabId() {
     try {
         const queryOptions = { active: true, currentWindow: true };
@@ -160,6 +175,9 @@ var publishCommentsButton = document.getElementById("publish-commentbtn");
 var loadMoreCommentsButton = document.getElementById("loadmore-commentsbtn");
 var clickReplyButton = document.getElementById("click-replybtn");
 var clickCommentsButton = document.getElementById("click-commentsbtn");
+var workflowLWButton = document.getElementById("workflow-lwbtn");
+var workflowCWButton = document.getElementById("workflow-cwbtn");
+var workflowPLButton = document.getElementById("workflow-plbtn");
 
 likeButton.addEventListener("click", async function () {
     await handleButtonClick(like, likeButton, "Liked! 😎", "Something went wrong!");
@@ -183,4 +201,16 @@ clickReplyButton.addEventListener("click", async function () {
 
 clickCommentsButton.addEventListener("click", async function () {
     await handleButtonClick(clickComments, clickCommentsButton, "Comments clicked! 😎", "Something went wrong!");
+}, false);
+
+workflowLWButton.addEventListener("click", async function () {
+    await handleButtonClick(workflowLW, workflowLWButton, "Workflow LW clicked! 😎", "Something went wrong!");
+}, false);
+
+workflowCWButton.addEventListener("click", async function () {
+    await handleButtonClick(workflowCW, workflowCWButton, "Workflow CW clicked! 😎", "Something went wrong!");
+}, false);
+
+workflowPLButton.addEventListener("click", async function () {
+    await handleButtonClick(workflowPL, workflowPLButton, "Workflow PL clicked! 😎", "Something went wrong!");
 }, false);
