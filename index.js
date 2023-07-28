@@ -1,156 +1,100 @@
 async function like(tabId) {
-    try {
-        const [result] = await chrome.scripting.executeScript({
-            target: { tabId: tabId },
-            func: () => {
-                    // Get all the elements with the specified class
-                    const elements = document.getElementsByClassName("flex-wrap justify-center artdeco-button__text align-items-center");
-                    console.log(elements);
-                    // Iterate through each element and simulate a click event
-                    for (let i = 0; i < elements.length; i++) {
-                    elements[i].click();
-                }
-            },
-        });
-        return result;
-    } catch (error) {
-        console.error("Error getting Like Buttons:", error);
-        return null;
+    const script = () => {
+            const elements = document.getElementsByClassName("flex-wrap justify-center artdeco-button__text align-items-center");
+            for (let i = 0; i < elements.length; i++) { elements[i].click(); }
     }
+    return await executeScriptInTab(tabId, script);
 }
 
 async function writeComments(tabId) {
-    try {
-        const [result] = await chrome.scripting.executeScript({
-            target: { tabId: tabId },
-            func: () => {
-                // Define an array of customizable texts
-                const textArray =  [
-                    "Fantastic!",
-                    "Awesome!",
-                    "Excellent!",
-                    "Superb!",
-                    "Terrific!",
-                    "Outstanding!",
-                    "Marvelous!",
-                    "Impressive!",
-                    "Wonderful!",
-                    "Splendid!",
-                    "Fabulous!",
-                    "Brilliant!",
-                    "Amazing!",
-                    "Stellar!",
-                    "Magnificent!",
-                    "Incredible!",
-                    "Phenomenal!",
-                    "Super!",
-                    "First-rate!",
-                    "Nice post",
-                    "Post, nice",
-                    "Post that is nice",
-                    "A post worth appreciating",
-                    "Great post",
-                    "Post of excellence",
-                    "A nicely written post",
-                    "Impressive post",
-                    "Well done with the post",
-                    "Post, nicely done",
-                    "Post with a touch of brilliance",
-                    "Fantastic post",
-                    "Post that deserves applause",
-                    "Kudos for the post",
-                    "Post that shines",
-                    "An amazing post",
-                    "Remarkable post",
-                    "Post with a wow factor",
-                    "Outstanding post",
-                    "Nice, thanks for sharing.",
-                    "A delightful share!",
-                    "Thanks for the nice share.",
-                    "A nice share to remember."]
-                // Modify the textArray
-                const modifiedTextArray = textArray.map(text => {
-                    // Add '\n\n' after '!' or '.'
-                    const modifiedText = text.replace(/([!.])(\s*)/g, '$1\n\n');
+    
+    const script = () => {
+        const textArray =  [
+            "Fantastic!",
+            "Awesome!",
+            "Excellent!",
+            "Superb!",
+            "Terrific!",
+            "Outstanding!",
+            "Marvelous!",
+            "Impressive!",
+            "Wonderful!",
+            "Splendid!",
+            "Fabulous!",
+            "Brilliant!",
+            "Amazing!",
+            "Stellar!",
+            "Magnificent!",
+            "Incredible!",
+            "Phenomenal!",
+            "Super!",
+            "First-rate!",
+            "Nice post",
+            "Post, nice",
+            "Post that is nice",
+            "A post worth appreciating",
+            "Great post",
+            "Post of excellence",
+            "A nicely written post",
+            "Impressive post",
+            "Well done with the post",
+            "Post, nicely done",
+            "Post with a touch of brilliance",
+            "Fantastic post",
+            "Post that deserves applause",
+            "Kudos for the post",
+            "Post that shines",
+            "An amazing post",
+            "Remarkable post",
+            "Post with a wow factor",
+            "Outstanding post",
+            "Nice, thanks for sharing.",
+            "A delightful share!",
+            "Thanks for the nice share.",
+            "A nice share to remember."
+        ]
+        const modifiedTextArray = textArray.map(text => {
+            // Add '\n\n' after '!' or '.'
+            const modifiedText = text.replace(/([!.])(\s*)/g, '$1\n\n');
 
-                    // Modify the text with a 50% chance
-                    const shouldModify = Math.random() < 0.5;
-                    const modifiedRandomText = shouldModify ? modifiedText : text;
+            // Modify the text with a 50% chance
+            const shouldModify = Math.random() < 0.5;
+            const modifiedRandomText = shouldModify ? modifiedText : text;
 
-                    return modifiedRandomText;
-                });
-
-                // Get all the divs containing the inputs
-                const divs = document.querySelectorAll('div.comments-comment-texteditor');
-
-                // Iterate through each div and update the input field
-                divs.forEach(div => {
-                    // Get the input field within the current div
-                    const inputField = div.querySelector('.ql-editor');
-                    
-                    // Randomly select a text from the array
-                    const randomIndex = Math.floor(Math.random() * textArray.length);
-                    const randomText = modifiedTextArray[randomIndex];
-
-                    // Set the value of the input field to the randomly selected text
-                    inputField.innerHTML = randomText;
-                });
-            },
+            return modifiedRandomText;
         });
-        return result;
-    } catch (error) {
-        console.error("Error getting Like Buttons:", error);
-        return null;
-    }      
+        const divs = document.querySelectorAll('div.comments-comment-texteditor');
+        divs.forEach(div => {
+            const inputField = div.querySelector('.ql-editor');
+            const randomIndex = Math.floor(Math.random() * textArray.length);
+            const randomText = modifiedTextArray[randomIndex];
+            inputField.innerHTML = randomText;
+        });
+    }
+    return await executeScriptInTab(tabId, script);
 }
 
 async function publishComments(tabId) {
-    try {
-        const [result] = await chrome.scripting.executeScript({
-            target: { tabId: tabId },
-            func: () => { 
-
-                // Get all the buttons
-                const buttons = document.querySelectorAll('button.comments-comment-box__submit-button');
-            
-                // Function to simulate a button click
-                const clickButton = (button) => {
-                    button.click();
-                };
-            
-                // Iterate through each button and click it with a delay
-                buttons.forEach((button, index) => {
-                    setTimeout(() => {
-                    clickButton(button);
-                    }, index * 5000); // Delay each click by 5 seconds (5000 milliseconds)
-                });
-            },
+    const script = () =>  { 
+        const buttons = document.querySelectorAll('button.comments-comment-box__submit-button');
+        const clickButton = (button) => {
+            button.click();
+        };
+        buttons.forEach((button, index) => {
+            setTimeout(() => {
+            clickButton(button);
+            }, index * 5000); // Delay each click by 5 seconds (5000 milliseconds)
         });
-        return result;
-    } catch (error) {
-        console.error("Error getting Like Buttons:", error);
-        return null;
     }
+    return await executeScriptInTab(tabId, script);
 }
 
 async function loadMoreComments(tabId) {
-    try {
-        const [result] = await chrome.scripting.executeScript({
-            target: { tabId: tabId },
-            func: () => {
-    
-                // Get all the "Load more comments" buttons
-                const loadMoreButtons = document.querySelectorAll('button.comments-comments-list__load-more-comments-button');
-            
-                // Click each "Load more comments" button
-                loadMoreButtons.forEach(button => button.click());
-            }
-        });
-        return result;
-    } catch (error) {
-        console.error("Error getting Like Buttons:", error);
-        return null;
+    const script = () =>  {
+        const loadMoreButtons = document.querySelectorAll('button.comments-comments-list__load-more-comments-button');
+        loadMoreButtons.forEach(button => button.click());
     }
+    return await executeScriptInTab(tabId, script);
 }
 
 async function getCurrentTabId() {
@@ -165,6 +109,19 @@ async function getCurrentTabId() {
         }
     } catch (error) {
         console.error("Error getting current tab:", error);
+        return null;
+    }
+}
+
+async function executeScriptInTab(tabId, script) {
+    try {
+        const [result] = await chrome.scripting.executeScript({
+            target: { tabId: tabId },
+            func: script,
+        });
+        return result;
+    } catch (error) {
+        console.error("Error executing script:", error);
         return null;
     }
 }
