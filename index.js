@@ -9,6 +9,26 @@ async function like(tabId) {
 async function writeComments(tabId) {
     const script = () => {
         const textArray =  [
+            "Great insights! Thanks for sharing your expertise.",
+            "I'm inspired by your dedication and passion for your work.",
+            "Your accomplishments are truly impressive. Keep up the fantastic work!",
+            "This is valuable information. Thanks for keeping us informed.",
+            "Congratulations on your success! You deserve all the recognition.",
+            "I appreciate the positive impact you're making in your field.",
+            "Your work ethic and determination are commendable.",
+            "Thanks for being an inspiration to others in the industry.",
+            "Your thought leadership is making a difference. Keep it up!",
+            "Your expertise shines through in every post you make.",
+            "I'm grateful for the valuable content you consistently share.",
+            "You're a true leader, and your advice is always on point.",
+            "It's clear that you put a lot of effort into creating valuable content.",
+            "I've learned so much from following your posts. Thank you!",
+            "Your positivity is contagious. Keep spreading the good vibes!",
+            "Your dedication to continuous learning is admirable.",
+            "Thanks for sharing your experiences and lessons learned.",
+            "Your posts are always insightful and thought-provoking.",
+            "You have a unique perspective that adds value to every discussion.",
+            "You're making a significant impact, and I look forward to more of your contributions.",
             "Fantastic!",
             "Awesome!",
             "Excellent!",
@@ -112,6 +132,37 @@ async function clickComments(tabId) {
     return await executeScriptInTab(tabId, script);
 }
 
+async function scrollPage(tabId) {
+    const script = () =>  {
+        // Set the number of times to scroll and the interval in milliseconds
+        const scrollCount = 10;
+        const interval = 15000;
+      
+        let scrollIndex = 0;
+      
+        // Function to scroll the page
+        function scrollToNext() {
+          if (scrollIndex < scrollCount) {
+            window.scrollTo(0, document.body.scrollHeight);
+            scrollIndex++;
+          } else {
+            clearInterval(scrollInterval);
+          }
+        }
+      
+        // Start the scrolling interval
+        const scrollInterval = setInterval(scrollToNext, interval);
+      }
+    return await executeScriptInTab(tabId, script);
+}
+
+async function featureBody(tabId) {
+    const script = () =>  {
+        //script goes here
+    }
+    return await executeScriptInTab(tabId, script);
+}
+
 async function workflowLW(tabId) {
     await like(tabId);
     await writeComments(tabId);
@@ -175,6 +226,7 @@ var publishCommentsButton = document.getElementById("publish-commentbtn");
 var loadMoreCommentsButton = document.getElementById("loadmore-commentsbtn");
 var clickReplyButton = document.getElementById("click-replybtn");
 var clickCommentsButton = document.getElementById("click-commentsbtn");
+var scrollPageButton = document.getElementById("scroll-pagebtn");
 var workflowLWButton = document.getElementById("workflow-lwbtn");
 var workflowCWButton = document.getElementById("workflow-cwbtn");
 var workflowPLButton = document.getElementById("workflow-plbtn");
@@ -199,8 +251,8 @@ clickReplyButton.addEventListener("click", async function () {
     await handleButtonClick(clickReply, clickReplyButton, "Replies clicked! 😎", "Something went wrong!");
 }, false);
 
-clickCommentsButton.addEventListener("click", async function () {
-    await handleButtonClick(clickComments, clickCommentsButton, "Comments clicked! 😎", "Something went wrong!");
+scrollePageButton.addEventListener("click", async function () {
+    await handleButtonClick(scrollePage, scrollePageButton, "Scroll Page clicked! 😎", "Something went wrong!");
 }, false);
 
 workflowLWButton.addEventListener("click", async function () {
@@ -209,6 +261,10 @@ workflowLWButton.addEventListener("click", async function () {
 
 workflowCWButton.addEventListener("click", async function () {
     await handleButtonClick(workflowCW, workflowCWButton, "Workflow CW clicked! 😎", "Something went wrong!");
+}, false);
+
+workflowPLButton.addEventListener("click", async function () {
+    await handleButtonClick(workflowPL, workflowPLButton, "Workflow PL clicked! 😎", "Something went wrong!");
 }, false);
 
 workflowPLButton.addEventListener("click", async function () {
