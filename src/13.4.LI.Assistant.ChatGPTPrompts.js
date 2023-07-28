@@ -1,0 +1,1 @@
+prompt="make a JavasScript array with a supportive reply to each element of this array:"
