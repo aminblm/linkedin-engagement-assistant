@@ -126,59 +126,36 @@ async function executeScriptInTab(tabId, script) {
     }
 }
 
+async function handleButtonClick(actionFunction, button, successMessage, errorMessage) {
+    const tabId = await getCurrentTabId();
+    if (tabId) {
+        console.log(`${actionFunction.name}()`);
+        await actionFunction(tabId);
+        button.innerHTML = successMessage;
+    } else {
+        button.innerHTML = errorMessage;
+        button.style = "background-color:red;";
+        console.error("Error getting tabId.");
+    }
+}
+
 var likeButton = document.getElementById("likebtn");
 var writeCommentsButton = document.getElementById("write-commentsbtn");
 var publishCommentsButton = document.getElementById("publish-commentbtn");
 var loadMoreCommentsButton = document.getElementById("loadmore-commentsbtn");
 
 likeButton.addEventListener("click", async function () {
-    const tabId = await getCurrentTabId();
-    if (tabId) {
-        console.log("like()");
-        like(tabId);
-        likeButton.innerHTML = "Liked! 😎"
-    } else {
-        likeButton.innerHTML = "Something went wrong!"
-        likeButton.style = "background-color:red;"
-        console.error("Error getting tabId.");
-    }
+    await handleButtonClick(like, likeButton, "Liked! 😎", "Something went wrong!");
 }, false);
 
 writeCommentsButton.addEventListener("click", async function () {
-    const tabId = await getCurrentTabId();
-    if (tabId) {
-        console.log("writeComments()");
-        writeComments(tabId);
-        writeCommentsButton.innerHTML = "Comments Written! 😎"
-    } else {
-        writeCommentsButton.innerHTML = "Something went wrong!"
-        writeCommentsButton.style = "background-color:red;"
-        console.error("Error getting tabId.");
-    }
+    await handleButtonClick(writeComments, writeCommentsButton, "Comments Written! 😎", "Something went wrong!");
 }, false);
 
 publishCommentsButton.addEventListener("click", async function () {
-    const tabId = await getCurrentTabId();
-    if (tabId) {
-        console.log("publishComments()");
-        publishComments(tabId);
-        publishCommentsButton.innerHTML = "Comments Publishing! 😎"
-    } else {
-        publishCommentsButton.innerHTML = "Something went wrong!"
-        publishCommentsButton.style = "background-color:red;"
-        console.error("Error getting tabId.");
-    }
+    await handleButtonClick(publishComments, publishCommentsButton, "Comments Publishing! 😎", "Something went wrong!");
 }, false);
 
 loadMoreCommentsButton.addEventListener("click", async function () {
-    const tabId = await getCurrentTabId();
-    if (tabId) {
-        console.log("loadMoreComments()");
-        loadMoreComments(tabId);
-        likeButton.innerHTML = "Comments loaded! 😎"
-    } else {
-        loadMoreCommentsButton.innerHTML = "Something went wrong!"
-        loadMoreCommentsButton.style = "background-color:red;"
-        console.error("Error getting tabId.");
-    }
+    await handleButtonClick(loadMoreComments, loadMoreCommentsButton, "Comments loaded! 😎", "Something went wrong!");
 }, false);
