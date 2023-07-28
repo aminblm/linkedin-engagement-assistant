@@ -1,0 +1,15 @@
+body{
+    width: 270px;
+    height: auto;
+}
+
+.assistant-btn{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    height: 50px
+}
+
+.dev{
+    overflow-y: scroll;
+}
