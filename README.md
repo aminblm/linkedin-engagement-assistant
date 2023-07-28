@@ -17,7 +17,7 @@ There are several features and simplifications I'd like to add to this project. 
 
 ## How to use
 
-- Step 0: Download the repository or clone it
+- Step 0: [Download](https://github.com/aminblm/linkedin-engagement-assistant/releases/tag/v0.1) the repository or clone it
 - Step 1-6:
 
 ![Tutorial](https://github.com/aminblm/linkedin-engagement-assistant/assets/25132838/7d403c4c-fbcd-46a8-b0a8-448632ac2f1d)
