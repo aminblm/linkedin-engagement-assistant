@@ -9,8 +9,7 @@ To modify, use, get documentation or for you enquiries kindly contact me via: <b
 
 ## Updated UI is available now!
 
-![Uploading image.png…]()
-
+<img width="1625" alt="image" src="https://github.com/aminblm/linkedin-engagement-assistant/assets/25132838/ac58755f-3250-4e14-a920-4331acb698b9">
 
 ## Donation and Support 🥳
 
