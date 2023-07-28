@@ -7,6 +7,11 @@ Introducing the AI LinkedIn Engagement Assistant, a revolutionary tool designed 
 To modify, use, get documentation or for you enquiries kindly contact me via: <br>
 **amin@boulouma.com**
 
+## Updated UI is available now!
+
+![Uploading image.png…]()
+
+
 ## Donation and Support 🥳
 
 With your support I build, update and work on this project. You can also purchase additional packages, tutorials and materials explaining how this bot is working. <br>
