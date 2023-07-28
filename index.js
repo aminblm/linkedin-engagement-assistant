@@ -96,6 +96,22 @@ async function loadMoreComments(tabId) {
     return await executeScriptInTab(tabId, script);
 }
 
+async function clickReply(tabId) {
+    const script = () =>  {
+        const replyButtons = document.querySelectorAll('button.comments-comment-social-bar__reply-action-button');
+        replyButtons.forEach(button => button.click());
+    }
+    return await executeScriptInTab(tabId, script);
+}
+
+async function clickComments(tabId) {
+    const script = () =>  {
+        const commentButtons = document.querySelectorAll('button.comment-button');
+        commentButtons.forEach(button => button.click());
+    }
+    return await executeScriptInTab(tabId, script);
+}
+
 async function getCurrentTabId() {
     try {
         const queryOptions = { active: true, currentWindow: true };
@@ -142,6 +158,8 @@ var likeButton = document.getElementById("likebtn");
 var writeCommentsButton = document.getElementById("write-commentsbtn");
 var publishCommentsButton = document.getElementById("publish-commentbtn");
 var loadMoreCommentsButton = document.getElementById("loadmore-commentsbtn");
+var clickReplyButton = document.getElementById("click-replybtn");
+var clickCommentsButton = document.getElementById("click-commentsbtn");
 
 likeButton.addEventListener("click", async function () {
     await handleButtonClick(like, likeButton, "Liked! 😎", "Something went wrong!");
@@ -157,4 +175,12 @@ publishCommentsButton.addEventListener("click", async function () {
 
 loadMoreCommentsButton.addEventListener("click", async function () {
     await handleButtonClick(loadMoreComments, loadMoreCommentsButton, "Comments loaded! 😎", "Something went wrong!");
+}, false);
+
+clickReplyButton.addEventListener("click", async function () {
+    await handleButtonClick(clickReply, clickReplyButton, "Replies clicked! 😎", "Something went wrong!");
+}, false);
+
+clickCommentsButton.addEventListener("click", async function () {
+    await handleButtonClick(clickComments, clickCommentsButton, "Comments clicked! 😎", "Something went wrong!");
 }, false);
