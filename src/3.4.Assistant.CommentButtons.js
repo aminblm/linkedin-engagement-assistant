@@ -1,3 +1,5 @@
+// do not use - too many requests
+
 // Get all the comment buttons
 const commentButtons = document.querySelectorAll('button.comment-button');
 
