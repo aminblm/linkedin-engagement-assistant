@@ -13,11 +13,10 @@ const clickButton = (button, index) => {
   console.log(`✅ Clicked comment button #${index + 1} at ${timestamp}`);
 };
 
-// ====== RANDOMIZED DELAYED CLICKING (6–9 seconds between each) ======
 let accumulatedDelay = 0;
 
 buttons.forEach((button, index) => {
-  const randomDelay = Math.floor(Math.random() * 3000) + 6000; // 60,00–90,00 ms
+  const randomDelay = Math.floor(Math.random() * 700) + 800; // 800 - 1500 second between each
   accumulatedDelay += randomDelay;
 
   setTimeout(() => {
