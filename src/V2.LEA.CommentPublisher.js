@@ -17,7 +17,7 @@ const clickButton = (button, index) => {
 let accumulatedDelay = 0;
 
 buttons.forEach((button, index) => {
-  const randomDelay = Math.floor(Math.random() * 30000) + 60000; // 60,000–90,000 ms
+  const randomDelay = Math.floor(Math.random() * 3000) + 6000; // 60,00–90,00 ms
   accumulatedDelay += randomDelay;
 
   setTimeout(() => {
